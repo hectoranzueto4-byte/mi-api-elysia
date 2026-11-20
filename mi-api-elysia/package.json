@@ -1,0 +1,24 @@
+{
+  "name": "mi-api-elysia",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "7.10.1",
+    "dotenv": "^18.0.10",
+    "elysia": "latest",
+    "pg": "^8.23.1",
+    "prisma": "8.0.0-rc.33"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1",
+    "bun-types": "latest",
+    "dotenv-cli": "^11.1.0",
+    "typescript": "^7.0.2"
+  },
+  "module": "src/index.js"
+}
